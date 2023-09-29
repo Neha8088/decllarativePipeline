@@ -1,0 +1,20 @@
+pipeline{
+  agent any
+  stages{
+    stage('BuildJob'){
+      echo "Declarative BuildJob"
+    }
+
+    stage('TestJob'){
+      echo "Declarative TestJob"
+    }
+
+    stage('DeployJob'){
+      echo "Declarative DeployJob"
+    }
+
+    stage('ReleaseJob'){
+      echo "Declarative ReleaseJob"
+    }
+  }
+}
