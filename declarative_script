@@ -2,19 +2,27 @@ pipeline{
   agent any
   stages{
     stage('BuildJob'){
-      echo "Declarative BuildJob"
+      steps{
+        echo "Declarative BuildJob"
+      }
     }
 
     stage('TestJob'){
-      echo "Declarative TestJob"
+      steps{
+        echo "Declarative TestJob"
+      }
     }
 
     stage('DeployJob'){
-      echo "Declarative DeployJob"
+      steps{
+        echo "Declarative DeployJob"
+      }  
     }
 
     stage('ReleaseJob'){
-      echo "Declarative ReleaseJob"
+      steps{
+        echo "Declarative ReleaseJob"
+      }
     }
   }
 }
